@@ -1,9 +1,8 @@
 function main() {
 
     let calcularP1 = document.getElementById("calcularP1");
-    let resultadoP1 = document.getElementById("resultadoP1"); 
-
     function palindromo(){
+    let resultadoP1 = document.getElementById("resultadoP1"); 
     let palindromo = document.getElementById("palindromo").value;
     let binario = parseInt(palindromo);
     binario = binario.toString(2);
@@ -29,9 +28,9 @@ function main() {
     calcularP1.addEventListener("click", ()=> palindromo());
 
     let calcularP2 = document.getElementById("calcularP2");
-    let resultadoP2 = document.getElementById("resultadoP2");
-   
+    
     function countLetters(){
+        let resultadoP2 = document.getElementById("resultadoP2");
             let text = document.getElementById("cadena").value;
                 const answer ={};
                 for (let i = 0; i < text.length; i++) {
@@ -49,9 +48,8 @@ function main() {
 
 
     let calcularP3 = document.getElementById("calcularP3");
-    let resultadoP3 = document.getElementById("resultadoP3");
-
     function esBisiesto(){
+    let resultadoP3 = document.getElementById("resultadoP3");
     let ano = document.getElementById("ano").value;
     let fecha = new Date(ano);
     let year = fecha.getFullYear();
@@ -65,9 +63,8 @@ function main() {
     calcularP3.addEventListener("click", ()=> esBisiesto());
 
     let calcularP4 = document.getElementById("calcularP4");
-    let resultadoP4 = document.getElementById("resultadoP4");
-
     function calcNumber(){
+    let resultadoP4 = document.getElementById("resultadoP4");
     let numero = parseInt(document.getElementById("number").value);
     if(isNaN(numero) || numero === ""){
         resultadoP4.innerText = `No es un número primo.`;
